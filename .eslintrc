@@ -1,0 +1,93 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "default-case": "error",
+    "eol-last": [
+      "warn",
+      "always"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreTemplateLiterals": true,
+        "ignoreStrings": true
+      }
+    ],
+    "multiline-ternary": [
+      "error",
+      "always-multiline"
+    ],
+    "no-await-in-loop": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "error"
+        ]
+      }
+    ],
+    "no-duplicate-imports": "error",
+    "no-extra-parens": "error",
+    "no-mixed-operators": "error",
+    "no-multiple-empty-lines": "error",
+    "no-self-compare": "error",
+    "operator-linebreak": [
+      "error"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "allowTemplateLiterals": true,
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      "error",
+      "always"
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "extends": [
+        "plugin:@typescript-eslint/recommended"
+      ],
+      "plugins": [
+        "@typescript-eslint"
+      ],
+      "parser": "@typescript-eslint/parser"
+    }
+  ]
+}

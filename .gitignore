@@ -1,0 +1,13 @@
+node_modules
+build
+
+.vscode
+.idea
+
+coverage
+
+.DS_*
+*.log
+logs
+
+headers.json
